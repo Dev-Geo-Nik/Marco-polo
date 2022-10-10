@@ -1,62 +1,33 @@
-/*****************         Custom properties             **************************/
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap");
 
+html {
+	font-size: 62.5%;
+}
 :root {
 	// Colors
-	--clr-dark: 230 35% 7%;
-	--clr-light: 231 77% 90%;
-	--clr-white: 0 0% 100%;
 
-	// 150px
-	--fs-900: 15rem;
-	// 100px
-	--fs-800: 10rem;
-	// 56px
-	--fs-700: 5.6rem;
-	// 32px
-	--fs-600: 3.2rem;
-	// 28px
-	--fs-500: 2.8rem;
-	// 18px for the base body text
-	--fs-400: 1.8rem;
-	// 16px
-	--fs-300: 1.6rem;
-	// 14px
-	--fs-200: 1.4rem;
+	--box-shadow-1: 0 3px 8px rgba(0, 0, 0, 0.1);
 
-	// Tablet
-	// 150px
-	--fs-900-t: 15rem;
-	// 80
-	--fs-800-t: 8rem;
-	// 40
-	--fs-700-t: 4rem;
-	// 24
-	--fs-650-t: 2.4rem;
-	// 20
-	--fs-600-t: 2rem;
-	// 16
+	/* Colors */
+	--clr-primary-1: #000;
+
+	--clr-text: hsl(200, 15%, 8%);
+
+	--clr-body-bg: hsl(0, 0%, 98%);
+	--clr-bg: #fff;
+	--fs-700: 2.4rem;
+	--fs-600: 1.8rem;
+	--fs-500: 1.6rem;
+	// 14px for the base body text
+	--fs-400: 1.4rem;
+
 	--fs-400-t: 1.6rem;
-	// 14
-	--fs-300-t: 1.4rem;
-	// Font families
 
 	// Smartphone
-	// 80
-	--fs-900-s: 8rem;
-	// 56
-	--fs-800-s: 5.6rem;
-	//24
-	--fs-700-s: 2.4rem;
-	// 16
-	--fs-600-s: 1.6rem;
-	// 15
-	--fs-400-s: 1.5rem;
-	// 14
-	--fs-300-s: 1.4rem;
 
-	// --ff-serif: "Bellefair", serif;
-	// --ff-sans-cond: "Barlow Condensed", sans-serif;
-	// --ff-sans-normal: "Barlow", sans-serif;
+	--fs-400-s: 1.5rem;
+
+	--ff-normal: "Nunito Sans", sans-serif;
 }
 
 /*****************         Resets             **************************/
@@ -115,13 +86,11 @@ h6 {
 }
 
 body {
-	font-family: var(--ff-sans-normal);
+	font-family: var(--ff-normal);
 	font-size: var(--fs-400);
-	// min-height: 100vh;
+	min-height: 100vh;
 	text-rendering: optimizeSpeed;
 	line-height: 1.5;
-	color: hsl(var(--clr-white));
-	// background-color: hsl(var(--clr-dark));
 }
 
 // This is for react root div element
