@@ -1,0 +1,17 @@
+.select {
+	box-sizing: content-box;
+	width: 14rem;
+	background-color: var(--clr-bg);
+	border: none;
+	padding: 0 2rem 0 2.4rem;
+	border-right: 16px solid transparent;
+	// text-indent: 4px;
+	// display: flex;
+	box-shadow: var(--box-shadow-1);
+}
+
+.select option {
+	// background-color: red;
+	// padding-left: 2.4rem;
+	// margin-left: 2.4rem;
+}

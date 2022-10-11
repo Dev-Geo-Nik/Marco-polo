@@ -12,7 +12,7 @@ export const useFetch = (url: string, options: any = null) => {
 				const res = await fetch(url, options);
 				if (res.status >= 200 && res.status < 300) {
 					const responseData = await res.json();
-					console.log(typeof responseData);
+					// console.log(typeof responseData);
 					setData(responseData);
 					setLoading(false);
 				}

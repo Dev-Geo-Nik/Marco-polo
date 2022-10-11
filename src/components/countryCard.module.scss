@@ -1,0 +1,53 @@
+.country_container {
+	width: 26.4rem;
+	height: 33.6rem;
+	background-color: var(--clr-bg);
+	border-radius: 5px;
+	box-shadow: var(--box-shadow-1);
+}
+
+.flag_container {
+	width: 100%;
+	height: 16rem;
+}
+
+.image {
+	height: 100%;
+	border-radius: 5px 5px 0 0;
+	width: 100%;
+}
+
+.text_container {
+	margin: 2.4rem 0 0 2.4rem;
+}
+
+.title {
+	font-size: var(--fs-600);
+	font-weight: 800;
+	margin-bottom: 1.5rem;
+	// line-height: 0.26rem;
+}
+
+.population {
+	color: var(--clr-text);
+	margin-bottom: 0.4rem;
+}
+
+.population_span {
+	font-weight: 600;
+}
+
+.region {
+	color: var(--clr-text);
+	margin-bottom: 0.4rem;
+}
+.region_span {
+	font-weight: 600;
+}
+
+.capital {
+	color: var(--clr-text);
+}
+.capital_span {
+	font-weight: 600;
+}

@@ -1,0 +1,18 @@
+.input_container {
+	position: relative;
+	background-color: red;
+}
+.input {
+	// width: 100%;
+	width: 48rem;
+	height: 5.6rem;
+	padding-left: 7rem;
+	box-shadow: var(--box-shadow-1);
+	border: none;
+}
+
+.search_icon {
+	top: 2rem;
+	left: 6%;
+	position: absolute;
+}
