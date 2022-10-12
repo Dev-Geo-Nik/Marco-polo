@@ -13,7 +13,33 @@
 	display: grid;
 	margin: 0rem 5.5%;
 	gap: 75px;
-	// grid-auto-flow: ;
 	grid-template-columns: repeat(auto-fit, minmax(24rem, auto));
-	// background-color: rgba(79, 114, 108, 0.781);
+}
+
+// / 760px 1024px
+@media (max-width: 64em) {
+}
+// 481px - 750px
+@media (min-width: 30.1em) and (max-width: 46.875em) {
+}
+
+// 375 -480px
+@media (max-width: 30em) {
+	.sub_header {
+		flex-direction: column;
+		justify-content: unset;
+		margin: 2.4rem 5.5% 0 5.5%;
+	}
+
+	.countries_container {
+		width: 100%;
+		display: grid;
+		// margin: 0rem 5.5%;
+		margin: 0;
+		gap: 40px;
+		grid-auto-flow: row;
+		grid-template-columns: 1fr;
+		justify-items: center;
+		// background-color: rgba(79, 114, 108, 0.781);
+	}
 }

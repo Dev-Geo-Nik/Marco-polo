@@ -24,4 +24,21 @@
 }
 
 .theme_icon {
+	width: 2rem;
+}
+
+// 375 -480px
+@media (max-width: 30em) {
+	.text {
+		font-size: var(--fs-600-s);
+	}
+
+	.theme_icon {
+		width: 1.6rem;
+		height: 1.6rem;
+	}
+	.theme_span {
+		font-size: var(--fs-400-s);
+		font-weight: 600;
+	}
 }

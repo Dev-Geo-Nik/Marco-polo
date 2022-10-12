@@ -1,9 +1,16 @@
+.card_container {
+	transition: all 0.5s ease-in-out;
+	cursor: pointer;
+	box-shadow: var(--box-shadow-1);
+}
+.card_container :hover {
+}
+
 .country_container {
 	width: 26.4rem;
 	height: 33.6rem;
 	background-color: var(--clr-bg);
 	border-radius: 5px;
-	box-shadow: var(--box-shadow-1);
 }
 
 .flag_container {

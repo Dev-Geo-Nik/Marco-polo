@@ -12,20 +12,27 @@ html {
 	--clr-primary-1: #000;
 
 	--clr-text: hsl(200, 15%, 8%);
-
 	--clr-body-bg: hsl(0, 0%, 98%);
 	--clr-bg: #fff;
+
+	// icons
+	--clr-moon: hsl(0, 0%, 98%);
+	--clr-search: #848484;
+	--clr-arrow: #000;
+
+	--fs-800: 3.2rem;
 	--fs-700: 2.4rem;
 	--fs-600: 1.8rem;
 	--fs-500: 1.6rem;
+
 	// 14px for the base body text
 	--fs-400: 1.4rem;
 
 	--fs-400-t: 1.6rem;
 
 	// Smartphone
-
-	--fs-400-s: 1.5rem;
+	--fs-600-s: 1.4rem;
+	--fs-400-s: 1.2rem;
 
 	--ff-normal: "Nunito Sans", sans-serif;
 }
@@ -211,4 +218,15 @@ select {
 .fs-700,
 .fs-600 {
 	line-height: 1.1;
+}
+
+// / 760px 1024px
+@media (max-width: 64em) {
+}
+// 481px - 750px
+@media (min-width: 30.1em) and (max-width: 46.875em) {
+}
+
+// 375 -480px
+@media (max-width: 30em) {
 }

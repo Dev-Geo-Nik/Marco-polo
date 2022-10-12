@@ -1,7 +1,10 @@
+import { Link } from "react-router-dom";
 import styles from "./countryCard.module.scss";
+
 interface Props {
 	country: any;
 }
+
 const CountryCard: React.FC<Props> = ({ country }) => {
 	// console.log(typeof country.population);
 
@@ -25,7 +28,11 @@ const CountryCard: React.FC<Props> = ({ country }) => {
 		</div>
 	);
 
-	return <>{displayCountry}</>;
+	return (
+		<Link to={`/country/${country.name.common}`} className={styles.card_container}>
+			{displayCountry}
+		</Link>
+	);
 };
 
 export default CountryCard;
