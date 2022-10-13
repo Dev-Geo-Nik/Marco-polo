@@ -6,12 +6,16 @@ export interface CountriesContextState {
 	allCountries: any;
 	filterByRegion: string;
 	currentFilteredCountries: any;
+	currentSingleCountry: any;
+	searchInputValue: any;
 }
 
 const initialState: CountriesContextState = {
 	allCountries: [],
+	currentSingleCountry: "",
 	currentFilteredCountries: [],
 	filterByRegion: "",
+	searchInputValue: "",
 };
 
 type ContextHook = () => {

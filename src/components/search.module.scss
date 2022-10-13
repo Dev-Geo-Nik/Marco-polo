@@ -1,6 +1,6 @@
 .input_container {
 	position: relative;
-	background-color: red;
+	// background-color: red;
 }
 .input {
 	// width: 100%;
@@ -9,6 +9,8 @@
 	padding-left: 7rem;
 	box-shadow: var(--box-shadow-1);
 	border: none;
+	background-color: var(--clr-bg);
+	color: var(--clr-text);
 }
 
 .search_icon {

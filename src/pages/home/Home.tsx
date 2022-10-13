@@ -12,7 +12,7 @@ import styles from "./home.module.scss";
 const Home: React.FC = () => {
 	const {
 		dispatch,
-		state: { currentFilteredCountries },
+		state: { currentFilteredCountries, searchInputValue },
 	} = useCountriesContext();
 	// Fetching the data
 	const { data, error, loading } = useFetch("https://restcountries.com/v3.1/all");
@@ -33,9 +33,23 @@ const Home: React.FC = () => {
 
 	// When the data is stored in context and filtered we display
 	if (currentFilteredCountries.length > 0) {
-		displayCountries = currentFilteredCountries.map((country: any, index: any) => {
-			return <CountryCard country={country} key={index} />;
-		});
+		let filtered = [];
+		// check if the user enters values at search input
+		if (searchInputValue) {
+			// we filter if we have match
+			filtered = currentFilteredCountries.filter((t: any) => t.name.common.toLowerCase() === searchInputValue.toLowerCase());
+		}
+		// if we have match display the country
+		if (filtered.length > 0) {
+			displayCountries = filtered.map((country: any, index: any) => {
+				return <CountryCard country={country} key={index} />;
+			});
+		} else {
+			// else we display all countries
+			displayCountries = currentFilteredCountries.map((country: any, index: any) => {
+				return <CountryCard country={country} key={index} />;
+			});
+		}
 	}
 
 	return (

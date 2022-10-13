@@ -1,9 +1,9 @@
 // libraries
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // local
 import Home from "./pages/home/Home";
 import "./assets/index.scss";
-import CountrySinglePage from "./pages/dynamic/CountrySinglePage";
+import CountrySinglePage from "./pages/dynamic/country_single_page/CountrySinglePage";
 
 const App: React.FC = () => {
 	return (

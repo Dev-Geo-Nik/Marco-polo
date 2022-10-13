@@ -18,6 +18,16 @@ export const reducer: ReducerType = (state, action) => {
 				...state,
 				currentFilteredCountries: action.payload,
 			};
+		case ActionTypes.CURRENT_SINGLE_COUNTRY:
+			return {
+				...state,
+				currentSingleCountry: action.payload,
+			};
+		case ActionTypes.SEARCH_FILTER:
+			return {
+				...state,
+				searchInputValue: action.payload,
+			};
 		default:
 			return state;
 	}

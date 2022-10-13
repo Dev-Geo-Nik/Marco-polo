@@ -9,12 +9,12 @@ const Filters: React.FC = () => {
 		state: { allCountries },
 	} = useCountriesContext();
 	const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-		console.log(e.currentTarget.value);
+		// console.log(e.currentTarget.value);
 
 		if (e.currentTarget.value === "Filter by Region") {
 			dispatch({ type: ActionTypes.CURRENT_FILTERED_COUNTRIES, payload: allCountries });
 		} else {
-			console.log("filter");
+			// console.log("filter");
 
 			const payloadArray = allCountries.filter((country: any) => {
 				if (country.region === e.currentTarget.value) {

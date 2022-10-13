@@ -11,10 +11,13 @@
 .text {
 	font-size: var(--fs-700);
 	font-weight: 800;
+	color: var(--clr-text);
 }
 .theme_container {
 	display: flex;
 	align-items: center;
+	cursor: pointer;
+	color: var(--clr-text);
 }
 
 .theme_span {

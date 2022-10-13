@@ -1,14 +1,18 @@
 .card_container {
+	display: block;
+	width: 100%;
 	transition: all 0.5s ease-in-out;
 	cursor: pointer;
 	box-shadow: var(--box-shadow-1);
+	width: 26.4rem;
+	height: 33.6rem;
 }
 .card_container :hover {
 }
 
 .country_container {
-	width: 26.4rem;
-	height: 33.6rem;
+	height: 100%;
+	width: 100%;
 	background-color: var(--clr-bg);
 	border-radius: 5px;
 }
@@ -32,6 +36,7 @@
 	font-size: var(--fs-600);
 	font-weight: 800;
 	margin-bottom: 1.5rem;
+	color: var(--clr-text);
 	// line-height: 0.26rem;
 }
 
