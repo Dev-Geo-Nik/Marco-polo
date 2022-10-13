@@ -1,4 +1,4 @@
-# Space Tourism Front mentor mobile responsive  challenge
+#  Marco Polo App 
 
 ## For live preview click  <strong>[here](https://marco-polo-portfolio-app.netlify.app/)</strong> 
 
